@@ -1,0 +1,6 @@
+SimpleITK>=2.2.1
+PyQt5
+numpy
+
+ipympl
+black
