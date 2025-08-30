@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spine MRI Report</title>
+    <style>
+        /* Basic styling - will be enhanced with anatomical term colors */
+        .report-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            background-color: white;
+        }
+        
+        .report-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+        
+        .study-type {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
+        
+        .technique {
+            font-size: 14px;
+            text-align: left;
+            margin-top: 15px;
+        }
+        
+        .observations, .impression {
+            margin-bottom: 30px;
+        }
+        
+        .observations h2, .impression h2 {
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 15px;
+        }
+        
+        .spinal-region {
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+        
+        .spinal-region h3 {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .disc-level {
+            margin-bottom: 8px;
+            padding-left: 15px;
+        }
+        
+        .general-findings {
+            margin-bottom: 20px;
+        }
+        
+        /* Anatomical term styling classes - to be populated */
+        .cervical-vertebra {
+            background-color: #e3f2fd;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .thoracic-vertebra {
+            background-color: #f3e5f5;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .lumbar-vertebra {
+            background-color: #e8f5e8;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .disc-level-term {
+            background-color: #fff3e0;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .spinal-structure {
+            background-color: #fce4ec;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        
+        .pathology-term {
+            background-color: #ffebee;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid #ffcdd2;
+        }
+        
+        /* No findings message styling */
+        .no-findings {
+            color: #718096;
+            font-style: italic;
+            text-align: center;
+            padding: 15px;
+            background-color: #f7fafc;
+            border: 1px dashed #e2e8f0;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        /* Hide sections that don't have findings */
+        .hidden-section {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="report-container">
+        
+        <!-- HEADER SECTION -->
+        <section class="report-header">
+            <h1 class="study-type">[STUDY_TYPE]</h1>
+            <div class="technique">
+                <strong>Technique:</strong> <span class="technique-details">[TECHNIQUE_DETAILS]</span>
+            </div>
+        </section>
+
+        <!-- OBSERVATIONS SECTION -->
+        <section class="observations">
+            <h2>OBSERVATIONS</h2>
+            
+            <!-- General findings - alignment, vertebral bodies overview -->
+            <div class="general-findings">
+                [GENERAL_FINDINGS]
+            </div>
+            
+            <!-- Cervical Spine Section (C1-C7) -->
+            <div class="spinal-region cervical-section" style="display: [CERVICAL_DISPLAY];">
+                <h3>Cervical Spine (C1-C7)</h3>
+                <div class="cervical-findings">
+                    [CERVICAL_FINDINGS]
+                </div>
+            </div>
+            
+            <!-- Thoracic Spine Section (T1-T12) -->
+            <div class="spinal-region thoracic-section" style="display: [THORACIC_DISPLAY];">
+                <h3>Thoracic Spine (T1-T12)</h3>
+                <div class="thoracic-findings">
+                    [THORACIC_FINDINGS]
+                </div>
+            </div>
+            
+            <!-- Lumbar Spine Section (L1-L5, S1) -->
+            <div class="spinal-region lumbar-section" style="display: [LUMBAR_DISPLAY];">
+                <h3>Lumbar Spine (L1-L5, S1)</h3>
+                <div class="lumbar-findings">
+                    [LUMBAR_FINDINGS]
+                </div>
+            </div>
+            
+            <!-- Additional findings - spinal cord, conus, paraspinal tissues -->
+            <div class="additional-findings">
+                [ADDITIONAL_FINDINGS]
+            </div>
+        </section>
+
+        <!-- IMPRESSION SECTION -->
+        <section class="impression">
+            <h2>IMPRESSION</h2>
+            <div class="impression-content">
+                [IMPRESSION_FINDINGS]
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>

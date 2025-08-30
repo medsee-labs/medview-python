@@ -1,0 +1,59 @@
+TotalSegmentator_Class,SNOMED_Code,SNOMED_Term,Category
+vertebrae_C1,14806007,C1 Vertebra,vertebra
+vertebrae_C2,39976000,C2 Vertebra,vertebra
+vertebrae_C3,113205007,C3 Vertebra,vertebra
+vertebrae_C4,5329002,C4 Vertebra,vertebra
+vertebrae_C5,36978003,C5 Vertebra,vertebra
+vertebrae_C6,36054005,C6 Vertebra,vertebra
+vertebrae_C7,87391001,C7 Vertebra,vertebra
+vertebrae_T1,64864005,T1 Vertebra,vertebra
+vertebrae_T2,53733008,T2 Vertenra,vertebra
+vertebrae_T3,1626008,T3 Vertebra,vertebra
+vertebrae_T4,73071006,T4 Vertebra,vertebra
+vertebrae_T5,56401006,T5 Vertebra,vertebra
+vertebrae_T6,45296009,T6 Vertebra,vertebra
+vertebrae_T7,62487009,T7 Vertebra,vertebra
+vertebrae_T8,11068009,T8 Vertebra,vertebra
+vertebrae_T9,82687006,T9 Vertebra,vertebra
+vertebrae_T10,7610001,T10 Vertebra,vertebra
+vertebrae_T11,12989004,T11 Vertebra,vertebra
+vertebrae_T12,23215003,T12 Vertebra,vertebra
+vertebrae_L1,66794005,L1 Vertebra,vertebra
+vertebrae_L2,14293000,L2 Vertebra,vertebra
+vertebrae_L3,36470004,L3 Vertebra,vertebra
+vertebrae_L4,11994002,L4 Vertebra,vertebra
+vertebrae_L5,49668003,L5 Vertebra,vertebra
+vertebrae_S1,65985001,Structure of first sacral vertebra,vertebra
+vertebrae_S2,65985001,Structure of first sacral vertebra,vertebra
+vertebrae_S3,65985001,Structure of first sacral vertebra,vertebra
+vertebrae_S4,65985001,Structure of first sacral vertebra,vertebra
+vertebrae_S5,65985001,Structure of first sacral vertebra,vertebra
+vertebrae_Co1,52605009,Amputation of coccygeal vertebra,vertebra
+vertebrae_Co2,52605009,Amputation of coccygeal vertebra,vertebra
+vertebrae_Co3,52605009,Amputation of coccygeal vertebra,vertebra
+vertebrae_Co4,52605009,Amputation of coccygeal vertebra,vertebra
+vertebrae_sacrum,54735007,Bone structure of sacrum,vertebra
+vertebrae_coccyx,72153006,Coccygeal region,vertebra
+disc_C2_C3,1078209008,"Intervertebral disc, C2-C3",intervertebral_disc
+disc_C3_C4,58820006,"Intervertebral disc, C3-C4",intervertebral_disc
+disc_C4_C5,49400002,"Intervertebral disc, C4-C5",intervertebral_disc
+disc_C5_C6,73959003,"Intervertebral disc, C5-C6",intervertebral_disc
+disc_C6_C7,75095006,"Intervertebral disc, C6-C7",intervertebral_disc
+disc_C7_T1,37414007,"Intervertebral disc, C7-T1",intervertebral_disc
+disc_T1_T2,40908007,"Intervertebral disc, T1-T2",intervertebral_disc
+disc_T2_T3,6004007,"Intervertebral disc, T2-T3",intervertebral_disc
+disc_T3_T4,2620004,"Intervertebral disc, T3-T4",intervertebral_disc
+disc_T4_T5,82965004,"Intervertebral disc, T4-T5",intervertebral_disc
+disc_T5_T6,72692000,"Intervertebral disc, T5-T6",intervertebral_disc
+disc_T6_T7,74401007,"Intervertebral disc, T6-T7",intervertebral_disc
+disc_T7_T8,28693002,"Intervertebral disc, T7-T8",intervertebral_disc
+disc_T8_T9,9188009,"Intervertebral disc, T8-T9",intervertebral_disc
+disc_T9_T10,113209001,"Intervertebral disc, T9-T10",intervertebral_disc
+disc_T10_T11,34959001,"Intervertebral disc, T10-T11",intervertebral_disc
+disc_T11_T12,1537001,"Intervertebral disc, T11-T12",intervertebral_disc
+disc_T12_L1,76206002,"Intervertebral disc, T12-L1",intervertebral_disc
+disc_L1_L2,80064006,"Intervertebral disc, L1-L2",intervertebral_disc
+disc_L2_L3,67459009,"Intervertebral disc, L2-L3",intervertebral_disc
+disc_L3_L4,62551000,"Intervertebral disc, L3-L4",intervertebral_disc
+disc_L4_L5,84020006,"Intervertebral disc, L4-L5",intervertebral_disc
+disc_L5_S1,75782005,"Intervertebral disc, L5-S1",intervertebral_disc
