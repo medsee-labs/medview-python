@@ -1,5 +1,9 @@
 # Medical Image Viewer (Matplotlib MPR)
 
+## medview-python
+
+![MedView Demo](assets/med_mpr_viewer_matplotlib.gif)
+
 A powerful, interactive medical image viewer for DICOM, NIfTI, and MetaImage files, supporting Multi-Planar Reconstruction (MPR) directly using Matplotlib(python).
 
 # Features
