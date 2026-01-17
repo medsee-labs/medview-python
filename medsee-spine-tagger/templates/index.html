@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSee.ai - Spine Report Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header class="app-header">
+        <h1>MedSee.ai - Spine Report Generator</h1>
+        <div class="status-indicator">
+            <span id="status-dot" class="status-dot"></span>
+            <span id="status-text">Ready</span>
+        </div>
+    </header>
+
+    <!-- Main Container with Three Panels -->
+    <div class="main-container">
+        
+        <!-- Left Panel: Generated Report Display -->
+        <div class="panel left-panel">
+            <div class="panel-header">
+                <h2>Generated Report</h2>
+                <button id="export-btn" class="action-btn" disabled>Export Report</button>
+            </div>
+            <div class="panel-content">
+                <div id="report-display" class="report-container">
+                    <div class="placeholder-message">
+                        <p>Your structured spine report will appear here after processing notes.</p>
+                        <p>Anatomical terms will be highlighted and clickable for 3D visualization.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Middle Panel: Notes Input -->
+        <div class="panel middle-panel">
+            <div class="panel-header">
+                <h2>Radiologist Notes</h2>
+                <div class="input-controls">
+                    <button id="clear-btn" class="action-btn secondary">Clear</button>
+                    <button id="process-btn" class="action-btn primary">Generate Report</button>
+                </div>
+            </div>
+            <div class="panel-content">
+                <textarea 
+                    id="notes-input" 
+                    class="notes-textarea"
+                    placeholder="Enter rough radiologist notes here...
+
+Example:
+- Patient presents with neck pain
+- C5-C6 disc protrusion noted
+- Mild spinal canal narrowing
+- No cord compression
+- L4-L5 disc bulge
+- Moderate foraminal stenosis
+
+The system will convert these rough notes into a structured spine report with clickable anatomical terms."
+                ></textarea>
+                
+                <!-- Input Statistics -->
+                <div class="input-stats">
+                    <span id="char-count">0 characters</span>
+                    <span id="word-count">0 words</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel: Future 3D Viewer / Controls -->
+        <div class="panel right-panel">
+            <div class="panel-header">
+                <h2>3D Visualization</h2>
+                <button id="slicer-btn" class="action-btn" disabled>Open 3D Slicer</button>
+            </div>
+            <div class="panel-content">
+                <div id="visualization-area" class="viz-container">
+                    <div class="placeholder-message">
+                        <p>Click on highlighted anatomical terms in the report to view 3D anatomy.</p>
+                        <p>Selected anatomical structures will be displayed here or opened in 3D Slicer.</p>
+                    </div>
+                    
+                    <!-- Selected Terms Display -->
+                    <div id="selected-terms" class="selected-terms" style="display: none;">
+                        <h3>Selected Anatomical Terms:</h3>
+                        <div id="terms-list" class="terms-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        <div class="footer-content">
+            <span>MedSee.ai | Spine Report Generator</span>
+            <span id="processing-status">Ready for input</span>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay" style="display: none;">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Processing notes and generating structured report...</p>
+        </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
